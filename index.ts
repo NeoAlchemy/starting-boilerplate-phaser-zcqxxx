@@ -8,7 +8,7 @@ class BootLevel extends Phaser.Scene {
   constructor() {
     super({ key: 'BootLevel' });
   }
-
+ 
   preload() {
     // CHANGE BASE URL!!!!
     this.load.baseURL =
