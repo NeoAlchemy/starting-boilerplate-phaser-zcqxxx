@@ -8,11 +8,11 @@ class BootLevel extends Phaser.Scene {
   constructor() {
     super({ key: 'BootLevel' });
   }
- 
+
   preload() {
     // CHANGE BASE URL!!!!
     this.load.baseURL =
-      'https://neoalchemy.github.io/flappy-birds-phaser-tgewwg/';
+      'https://neoalchemy.github.io/starting-boilerplate-phaser-zcqxxx/';
     this.load.bitmapFont({
       key: 'Oswald',
       textureURL: 'static/assets/font/OswaldLightRed.png',
@@ -83,7 +83,7 @@ class SplashLevel extends Phaser.Scene {
     });
 
     setTimeout(() => {
-      this.scene.start('MainLevel');
+      //this.scene.start('MainLevel');
     }, 2000);
   }
 
