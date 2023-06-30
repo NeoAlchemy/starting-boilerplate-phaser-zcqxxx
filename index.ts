@@ -11,6 +11,7 @@ class BootLevel extends Phaser.Scene {
 
   preload() {
     // CHANGE BASE URL!!!!
+    this.add.text(20, 20, 'Boot Sequence Initiated.');
     this.load.baseURL =
       'https://neoalchemy.github.io/starting-boilerplate-phaser-zcqxxx/';
     this.load.bitmapFont({
@@ -42,7 +43,7 @@ class SplashLevel extends Phaser.Scene {
 
     const text1 = this.add.bitmapText(-300, 200, 'Oswald', 'NeoAlchemy', 32);
     this.companyLine1 = text1;
-    const text2 = this.add.bitmapText(-300, 230, 'Oswald', 'Game Industry', 32);
+    const text2 = this.add.bitmapText(-300, 230, 'Oswald', 'Indie Games', 32);
     this.companyLine2 = text2;
 
     const loading = this.add.text(180, 300, ['Loading...'], {
@@ -77,7 +78,7 @@ class SplashLevel extends Phaser.Scene {
     });
     this.tweens.add({
       targets: this.companyLine2, //your image that must spin
-      x: '125',
+      x: '140',
       ease: 'Elastic',
       duration: 500, //duration is in milliseconds
     });
